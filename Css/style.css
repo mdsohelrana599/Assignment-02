@@ -52,7 +52,6 @@ nav ul li a {
   font-size: 4rem;
   font-weight: bold;
   color: rgba(0, 0, 0, 1);
-  margin-bottom: 20px;
 }
 .title span {
   color: rgba(233, 90, 8, 1);
@@ -61,7 +60,46 @@ nav ul li a {
   font-size: 1.3rem;
   color: rgba(0, 0, 0, 0.5);
 }
-.hero-img{
-    max-width: 100%;
-    height: auto;
+.hero-img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ******************Responsive style**************************** */
+@media screen and (max-width: 576px) {
+  .navber {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    
+  }
+
+  nav ul .hide {
+    display: none;
+  }
+  .hero{
+    flex-direction: column-reverse;
+  }
+}
+
+
+
+
+
+
+
+@media screen and (min-width:576px) and (max-width:992px){
+    .hero h1{
+        font-size: 3rem;
+    }
 }
