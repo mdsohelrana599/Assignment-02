@@ -301,7 +301,7 @@ button:hover {
 
 /* ***************footer section*********************** */
 .footer {
-  height: 460px;
+  height: 350px;
   padding: 30px;
   border-top: 1px solid #ddd;
 }
@@ -338,7 +338,7 @@ button:hover {
   flex: 2;
   min-width: 300px;
 }
-.footer-link a{
+.footer-link a {
   display: block;
   padding: 20px 0;
   text-decoration: none;
@@ -351,36 +351,32 @@ button:hover {
   text-decoration: none;
 }
 .footer-icon {
-    flex: 1;
-    min-width: 100px;
-    margin-top: 20px;
-    text-align: right;
+  flex: 1;
+  min-width: 100px;
+  margin-top: 20px;
+  text-align: right;
 }
 
 .footer-icon a {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
-.footer-icon img{
-    width: 30px;
-    height: auto;
+.footer-icon img {
+  width: 30px;
+  height: auto;
 }
 
-/* ******************Responsive style**************************** */
+/* ******************Mobil Responsive style**************************** */
 @media screen and (max-width: 576px) {
   .navber {
     flex-direction: row;
   }
-
   nav ul .hide {
     display: none;
   }
   .hero {
     flex-direction: column-reverse;
   }
-  .hero-img {
-  }
-
   /* ****product********* */
   .product-card-grid {
     grid-template-columns: 1fr;
@@ -388,7 +384,6 @@ button:hover {
   .badge {
     display: none;
   }
-
   .flower,
   .deals-container {
     flex-direction: column;
@@ -402,7 +397,6 @@ button:hover {
   .banner-card {
     min-width: 100%;
   }
-
   input[type="email"] {
     width: 100%;
     max-width: 200px;
@@ -411,7 +405,21 @@ button:hover {
     width: 100%;
     max-width: 200px;
   }
+  .footer-contaner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-link {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-icon {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
+/* ********Tab responsiv************ */
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
   .hero h1 {
@@ -420,11 +428,9 @@ button:hover {
   .product-card-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .badge {
     display: none;
   }
-
   .flower,
   .deals-container {
     flex-direction: column;
@@ -441,5 +447,14 @@ button:hover {
   .deal {
     display: flex;
     justify-content: space-around;
+  }
+  .footer-contaner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-icon {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
