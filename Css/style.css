@@ -251,6 +251,63 @@ nav ul li a {
   border-radius: 5px;
 }
 
+
+/* *******subscribe section*************** */
+.subscribe-section {
+    background: url("../image/news-letter-bg.png") no-repeat center center/cover;
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+    min-height: 533px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-content {
+    max-width: 830px;
+}
+
+.subscribe-content h2 {
+    margin: 0 0 20px;
+    font-size: 2em;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    width: 600px;
+    border: none;
+    font-size: 1em;
+}
+
+.sub-btn {
+    padding: 10px 20px;
+    width: 180px;
+    background-color:rgba(233, 90, 8, 1);;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #b15517;
+}
+
+
+
+
+
+
+
+
+
 /* ******************Responsive style**************************** */
 @media screen and (max-width: 576px) {
   .navber {
@@ -287,6 +344,15 @@ nav ul li a {
   .banner-card {
     min-width: 100%;
   }
+
+  input[type="email"] {
+        width: 100%;
+        max-width: 250px;
+    }
+    button {
+        width: 100%;
+        max-width: 250px;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
