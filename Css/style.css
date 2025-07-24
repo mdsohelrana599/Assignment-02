@@ -411,7 +411,10 @@ button:hover {
   }
   .footer-link {
     flex-direction: column;
-    gap: 10px;
+    justify-content: center;
+    text-align: center;
+    margin-right: 100px;
+    gap: 20px;
   }
   .footer-icon {
     text-align: center;
